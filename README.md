@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-	@Value("${example.message}")
+	@Value("${liverpool.message}")
 	private String message;
 
 	@GetMapping("/")
@@ -42,7 +42,7 @@ import org.springframework.beans.factory.annotation.Value;
 ```
 2. Se inyecta el parámetro que se encuentra en nuestros archivos properties<br>
 ```
-	@Value("${example.message}")
+	@Value("${liverpool.message}")
 	private String message;
 ```
 # Prueba
